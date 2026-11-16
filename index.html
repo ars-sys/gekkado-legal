@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー / Privacy Policy — 月下堂 Gekka Tarot</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8; max-width: 760px; margin: 0 auto; padding: 32px 20px 80px;
+    color: #1c1c1e; background: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e5e5e7; background: #1c1c1e; }
+    a { color: #6aa9ff; }
+    hr { border-color: #3a3a3c; }
+    .meta { color: #9a9a9e; }
+  }
+  h1 { font-size: 1.6rem; margin-bottom: 4px; }
+  h2 { font-size: 1.25rem; margin-top: 2.2rem; border-bottom: 1px solid rgba(128,128,128,.25); padding-bottom: 6px; }
+  .meta { color: #6e6e73; font-size: .9rem; margin: 0 0 8px; }
+  a { color: #0a66ff; }
+  hr { border: none; border-top: 1px solid #e0e0e0; margin: 40px 0; }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー / Privacy Policy</h1>
+<p class="meta">月下堂（Gekka Tarot）／ 提供者: ARS, K.K.</p>
+<p class="meta">最終更新日 / Last updated: 2026-11-16 ／ お問い合わせ: <a href="mailto:developer@ars-dev.co.jp">developer@ars-dev.co.jp</a></p>
+<p><a href="#ja">日本語</a> ／ <a href="#en">English</a></p>
+
+<section id="ja">
+<h2>1. はじめに</h2>
+<p>月下堂（以下「本アプリ」）は、ARS, K.K.（以下「当社」）が提供するタロット占いのアプリです。本ポリシーは、本アプリにおける情報の取り扱いを説明します。本アプリはユーザー登録（アカウント作成）を必要としません。</p>
+
+<h2>2. 端末の中だけに保存する情報</h2>
+<ul>
+  <li><strong>占いの記録</strong>: 占った日時、質問、引いた札、読み、AI の鑑定文。</li>
+  <li><strong>設定</strong>: 表示言語、通知の時刻、逆位置を使うか、AI 機能への同意の有無など。</li>
+  <li><strong>生年月日・生まれた時刻（任意）</strong>: 生まれた星座を端末の中で計算するためだけに使います。生年月日そのものは端末の外に送りません。</li>
+</ul>
+<p>これらは当社や第三者に送信しません。アプリを削除するとすべて消去されます。</p>
+
+<h2>3. 位置情報と天気（任意）</h2>
+<p>「今夜の空」と地域の天気を表示するため、ユーザーが許可した場合に限り、おおよその位置情報をアプリの使用中に 1 回だけ取得します。位置は端末の中で都市名に直し、緯度経度は小数点以下 1 桁（おおよそ 10 km）に丸めて保存します。位置の代わりに都市名を入力することもできます。</p>
+<p>天気は Apple の WeatherKit から取得します。このとき丸めた位置が Apple Inc. に送られ、その扱いは Apple のプライバシーポリシーに従います。位置情報の許可は、端末の「設定」からいつでも取り消せます。</p>
+
+<h2>4. AI による鑑定（月下の鑑定）</h2>
+<p>AI の鑑定を使うと、次の内容を当社のバックエンド（Cloudflare, Inc. の基盤で運用）を経由して Anthropic, PBC の Claude API に送信します。</p>
+<ul>
+  <li>引いた札と展開法、テーマ</li>
+  <li>ユーザーが書いた質問、追加の質問</li>
+  <li>今夜の空の短い文（月の形など）、生まれた星座、都市名と天気（設定した場合）</li>
+</ul>
+<p>生年月日そのもの、正確な位置、氏名や連絡先は送りません。質問の欄に個人を特定できることを書かないでください。</p>
+<p>AI 機能を初めて使うときに、送る内容と送り先をアプリ内で示し、同意を得てから送信します。同意しない場合は送信しません。同意は「設定」からいつでも取り消せます。Anthropic 社は API 経由で受け取ったデータをモデルの学習に使用しません。</p>
+<p>当社のバックエンドは、続けての質問や補助の札に答えるため、鑑定文と引いた札を 24 時間だけ保存し、その後消去します。回数の管理のため、利用回数（日・週・月ごとの数）を保存します。</p>
+
+<h2>5. 不正利用の防止と購入の確認</h2>
+<ul>
+  <li><strong>App Attest</strong>: AI 機能の呼び出しが正規のアプリからのものかを確かめるため、Apple の App Attest で作った鍵の識別子と公開鍵を当社のバックエンドに保存します。氏名や Apple ID とは結びつきません。</li>
+  <li><strong>購入</strong>: サブスクリプションは Apple の App 内課金で処理されます。お支払い情報は Apple が扱い、当社は受け取りません。会員の段を確かめるため、購入の記録（Apple が署名した取引情報）を当社のバックエンドで検証し、利用回数の管理に取引の識別子を使います。</li>
+</ul>
+
+<h2>6. 通知</h2>
+<p>「今日の一枚」の通知は端末の中で予約するもので、通知のために情報を送信することはありません。</p>
+
+<h2>7. 第三者への提供・委託</h2>
+<p>機能の提供のため、Anthropic, PBC（AI の鑑定）、Cloudflare, Inc.（バックエンドの基盤）、Apple Inc.（WeatherKit・App Attest・App 内課金）を利用します。提供は機能に必要な範囲に限り、ユーザーを特定する目的での販売や共有は行いません。上の通信では、インターネットの仕組み上、IP アドレスなどの通信情報が各サーバーに届きますが、当社はこれをユーザーの識別・追跡に使いません。</p>
+
+<h2>8. 広告・分析</h2>
+<p>広告は表示しません。広告 ID は使わず、広告・行動分析・トラッキングのための SDK も組み込んでいません。</p>
+
+<h2>9. 占いについて</h2>
+<p>本アプリの占いと AI の鑑定は娯楽として提供するものです。健康・お金・法律などの大事な判断は、専門家にご相談ください。</p>
+
+<h2>10. 子どものプライバシー</h2>
+<p>本アプリは特定の年齢層を対象に個人情報を収集する設計ではありません。AI により生成される文章を含むため、保護者の方は必要に応じて利用を見守ってください。</p>
+
+<h2>11. ポリシーの変更とお問い合わせ</h2>
+<p>本ポリシーは必要に応じて改定し、重要な変更はアプリまたは本ページでお知らせします。お問い合わせ: ARS, K.K. ／ <a href="mailto:developer@ars-dev.co.jp">developer@ars-dev.co.jp</a></p>
+</section>
+
+<hr>
+
+<section id="en" lang="en">
+<h2>1. Introduction</h2>
+<p>Gekka Tarot ("the App") is a tarot reading app provided by ARS, K.K. ("we"). This policy explains how information is handled in the App. The App does not require an account.</p>
+
+<h2>2. Information Stored Only on Your Device</h2>
+<ul>
+  <li><strong>Journal</strong>: the date, your question, the cards you drew, the readings and AI readings.</li>
+  <li><strong>Settings</strong>: language, reminder time, whether to use reversed cards, whether you agreed to the AI feature, etc.</li>
+  <li><strong>Birth date and time (optional)</strong>: used only to calculate your signs on the device. Your birth date never leaves the device.</li>
+</ul>
+<p>This information is not sent to us or to third parties, and it is erased when you delete the App.</p>
+
+<h2>3. Location and Weather (Optional)</h2>
+<p>To show tonight's sky and your local weather, the App obtains your approximate location once while in use, only if you allow it. The location is converted to a city name on the device, and the coordinates are rounded to one decimal place (about 10 km). You can type a city name instead.</p>
+<p>Weather comes from Apple's WeatherKit; the rounded location is sent to Apple Inc. and handled under Apple's privacy policy. You can revoke location permission at any time in the device Settings.</p>
+
+<h2>4. AI Readings ("Moonlit reading")</h2>
+<p>When you use an AI reading, the following is sent through our backend (running on Cloudflare, Inc.) to Anthropic, PBC's Claude API:</p>
+<ul>
+  <li>The cards you drew, the spread and the theme</li>
+  <li>The question and follow-up questions you wrote</li>
+  <li>A short summary of tonight's sky (moon phase etc.), your sun sign, and your city and weather (if set)</li>
+</ul>
+<p>We never send your birth date, your exact location, or your name or contact details. Please do not include personal details in your question.</p>
+<p>Before the first AI reading, the App shows what will be sent and to whom, and sends nothing unless you agree. You can withdraw your consent at any time in Settings. Anthropic does not use data received through its API to train its models.</p>
+<p>Our backend keeps the reading and the drawn cards for 24 hours so that follow-up questions and the extra card can refer to them, and then deletes them. It also stores usage counts (per day, week and month) to apply limits.</p>
+
+<h2>5. Fraud Prevention and Purchase Verification</h2>
+<ul>
+  <li><strong>App Attest</strong>: to confirm that AI requests come from the genuine App, our backend stores the identifier and public key of a key created with Apple's App Attest. It is not linked to your name or Apple ID.</li>
+  <li><strong>Purchases</strong>: subscriptions are processed by Apple's In-App Purchase. Apple handles payment information; we do not receive it. To determine your plan, our backend verifies the purchase record signed by Apple and uses the transaction identifier to count usage.</li>
+</ul>
+
+<h2>6. Notifications</h2>
+<p>Daily card reminders are scheduled on the device. No information is sent for notifications.</p>
+
+<h2>7. Third Parties</h2>
+<p>We use Anthropic, PBC (AI readings), Cloudflare, Inc. (backend) and Apple Inc. (WeatherKit, App Attest, In-App Purchase) only as needed to provide the features. We do not sell or share information to identify you. As with any internet service, network information such as your IP address reaches these servers; we do not use it to identify or track you.</p>
+
+<h2>8. Advertising and Analytics</h2>
+<p>The App shows no ads, does not use the advertising identifier, and includes no SDKs for advertising, analytics or tracking.</p>
+
+<h2>9. About Readings</h2>
+<p>Tarot and AI readings in the App are for entertainment. For health, money or legal decisions, please consult a professional.</p>
+
+<h2>10. Children's Privacy</h2>
+<p>The App is not designed to collect personal information from any particular age group. Because it includes AI-generated text, parents may wish to supervise its use.</p>
+
+<h2>11. Changes and Contact</h2>
+<p>We may update this policy and will announce important changes in the App or on this page. Contact: ARS, K.K. / <a href="mailto:developer@ars-dev.co.jp">developer@ars-dev.co.jp</a></p>
+</section>
+</body>
+</html>
